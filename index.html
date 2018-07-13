@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="euc-kr">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+		<title>창식♥희연 결혼 청첩장</title>
+		<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-text-size-adjust: 100%;
+		}
+
+		html,body {
+			height: 100%;
+		}
+
+		body {
+			background-color: #eee;
+		}
+
+		#wrap {
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: #fff;
+			height: auto;
+		}
+
+		.img100 {
+			max-width: 100%;
+			width: auto !important;
+			width: 100%;
+		}
+
+		#autoplay, .slide_wrap {
+			position:relative;
+			width:100%;
+			overflow:hidden;
+		}
+
+		.content_wrap {
+			font-size: 14px;
+			text-align: center;
+			padding-top: 15px;
+			margin: 0 15px;
+			color: #8d968c;
+			line-height: 20px;
+		}
+
+		h3 {
+			text-align: center;
+			color: rgba(181, 230, 29, 50);
+		}
+		p {
+			text-align: center;
+		}
+
+		.contact_wrap {
+			text-align: center;
+		}
+
+		.slide_wrap {
+			text-align: center;
+		}
+
+		table{
+			margin: auto;
+			text-align: center;
+			width: auto;
+			width: 100%;
+		}
+
+		.half {
+			margin: auto;
+			text-align: center;
+			width: auto;
+			width: 75%;
+		}
+
+		.end {
+			font-size: 14px;
+			text-align: center;
+			padding-top: 15px;
+			margin: 0 15px;
+			color: #8d968c;
+			line-height: 20px;
+		}
+		</style>
+		<link rel="apple-touch-icon" href="이미지경로.png" /> 
+		<script type="text/javascript"> 
+			<!-- 
+			// 주소창 자동 닫힘 
+			window.addEventListener("load", function(){ 
+			setTimeout(loaded, 100); 
+
+			}, false); 
+
+			function loaded(){ 
+			window.scrollTo(0, 1); 
+			} 
+			//--> 
+			// 주소(local),갤러리(gallery),카카오톡,전화걸기
+		</script>
+		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="slide_warp">
+				<img src="gallery/main_photo.jpg" class="img100"/>
+			</div>
+			<div class="content_wrap">
+				1983년 10월 20일에 태어난 신랑 김창식<br>
+				1985년 5월 22일에 태어난 신부 이희연<br>
+				2018년 7월 25일에 결혼합니다.<br>
+				저희의 결혼식을 축하해 주러 와주세요
+			</div>
+			<div class="contact_wrap">
+				<table class="contact_wrap">
+					<tr>
+						<td><a href="local.php" class="bg3">결혼식장</a></td>
+						<td><a href="gallery.php" class="bg4">웨딩 사진</a></td>
+						<td><a id="kakao-link-btn" href="javascript:;">
+						<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+						</a>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="tel:010-0000-0000" class="bg1">신랑 전화</a></td>
+						<td><a href="tel:010-1111-1111" class="bg1">신부 전화</a></td>
+				</table>
+						<script type='text/javascript'>
+						    Kakao.init('36ee2b42c8d6936c40517dadf5d982e0');
+						    function sendLink() {
+						      Kakao.Link.sendDefault({
+						        objectType: 'feed',
+						        content: {
+						          title: '창식♥희연 결혼 청첩장',
+						          imageUrl: 'http://www.topstarnews.net/news/photo/201805/405089_51252_3150.jpg',
+						          link: {
+						            mobileWebUrl: 'https://developers.kakao.com',
+						            webUrl: 'https://developers.kakao.com'
+						          }
+						        },
+						        buttons: [
+						          {
+						            title: '웹으로 보기',
+						            link: {
+						              mobileWebUrl: 'https://developers.kakao.com',
+						              webUrl: 'https://developers.kakao.com'
+						            }
+						          }
+						        ]
+						      });
+						    }
+						</script>
+			</div>
+			<div class="end">
+				저희 사랑의 결실을 보러 와주세요
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"/>
+	</body>
+</html>
